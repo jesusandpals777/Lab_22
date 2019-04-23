@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+const double PI = 3.14159; //value of PI
+
+//class circle
+class circle {
+public:
+int radius; //radius of cirlce
+public:
+double calcArea (); //calculate area of cirlce method
+};
+
+double circle::calcArea () { //definition of calcuate area of cirlce
+return PI * radius * radius;
+}
+
+int main () {
+circle circle1, circle2; //cirlce objects
+cout<< "Enter Radius for circle1: ";
+cin>> circle1.radius;
+cout<< "Enter Radius for circle2: ";
+cin>> circle2.radius;
+cout<<endl;
+//the output of the porgram
+cout<<"Radius of circle1: "<<circle1.radius<<endl; //radius of circle
+cout<<"Area of circle1: "<<circle1.calcArea()<<endl;//area of circle
+cout<<"Radius of circle2: "<<circle2.radius<<endl;
+cout<<"Area of circle2: "<<circle2.calcArea()<<endl;
+return 0;
+}
